@@ -11,8 +11,9 @@ This tools classifies landforms according to the method described in Pennock et 
 ### Scale Terrain Indices/Surface Derivatives
 This tool generates terrain index/surface derivative rasters at various scales depending on the input neighborhood radius (in cells).  The purpose of this tool is to provide users with a way to generate the scaled terrain indices/surface derivatives that the above tools are using for analysis.  
 
-## Full citation for article:
+## Citations:
 Evans, D. A., Williard, K. W., & Schoonover, J. E. (2016). Comparison of Terrain Indices and Landform Classification Procedures in Low-Relief Agricultural Fields. Journal of Geospatial Applications in Natural Resources, 1(1), 1.
+Pennock, D. J., Zebarth, B. J., and De Jong, E. (1987). Landform classification and soil distribution in hummocky terrain, Saskatchewan, Canada. Geoderma, 40, 297-315.
 
 ## Dependencies
 Dependencies for this ArcGIS Python Toolbox include arcpy (comes with ArcGIS), pandas, numpy, matplotlib, and scipy python packages as well as SAGA (System for Automated Geoscientific Analysis) which can be downloaded here: https://sourceforge.net/projects/saga-gis/. 
