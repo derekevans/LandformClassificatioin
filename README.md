@@ -1,7 +1,7 @@
 # LandformClassification
 ArcGIS Python Toolbox containing tools for classifying landforms in low-relief agricultural fields as described by Evans et al., 2016.  This article can be downloaded at http://scholarworks.sfasu.edu/j_of_geospatial_applications_in_natural_resources/vol1/iss1/1/.
 
-## Toolbox tools
+## Toolbox Tools
 ### Correlate Scaled Terrain Indices/Surface Derivatives with Soil Parameters
 The purpose of this tool is to find the optimal scale of terrain indices/surface derivatives for landform classification.  Two data layers required are 1) a digital elevation model of the area of interest and 2) a point shapefile/feature class of soil sampling locations throughout the area of interest that contains data for a certain soil parameter that is influenced by landform elements.  This tool calculates the Pearson or Spearman correlation coefficient between the soil parameter and terrain indices/surface derivatives derived at various scales.  The scale at which a terrain index/surface derivative is most correlated with the soil parameter is deemed the most suitable scale for deriving the individual terrain index/surface derivative.  
 ### Landform Classification (Evans et al., 2016)
