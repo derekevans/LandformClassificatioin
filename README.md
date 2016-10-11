@@ -13,6 +13,7 @@ This tool generates terrain index/surface derivative rasters at various scales d
 
 ## Citations:
 Evans, D. A., Williard, K. W., & Schoonover, J. E. (2016). Comparison of Terrain Indices and Landform Classification Procedures in Low-Relief Agricultural Fields. Journal of Geospatial Applications in Natural Resources, 1(1), 1.
+
 Pennock, D. J., Zebarth, B. J., and De Jong, E. (1987). Landform classification and soil distribution in hummocky terrain, Saskatchewan, Canada. Geoderma, 40, 297-315.
 
 ## Dependencies
