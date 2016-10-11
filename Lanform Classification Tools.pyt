@@ -1,6 +1,8 @@
 #######################################################################################################################################
 ##This toolbox contains tools that can be use to classify landforms in low relief agriculture fields as described in Evans et al., 2016.
 ##
+##Created by Derek Evans
+##
 ##Full citation for article:
 ##Evans, D. A., Williard, K. W., & Schoonover, J. E. (2016). Comparison of Terrain Indices and Landform Classification
 ##Procedures in Low-Relief Agricultural Fields. Journal of Geospatial Applications in Natural Resources, 1(1), 1.
