@@ -1,10 +1,8 @@
 # LandformClassification
-ArcGIS Python Toolbox containing tools for classifying landforms in low-relief agricultural fields as described by Evans et al., 2016.
+ArcGIS Python Toolbox containing tools for classifying landforms in low-relief agricultural fields as described by Evans et al., 2016.  This article can be downloaded at http://scholarworks.sfasu.edu/j_of_geospatial_applications_in_natural_resources/vol1/iss1/1/.
 
 ## Full citation for article:
 Evans, D. A., Williard, K. W., & Schoonover, J. E. (2016). Comparison of Terrain Indices and Landform Classification Procedures in Low-Relief Agricultural Fields. Journal of Geospatial Applications in Natural Resources, 1(1), 1.
-
-Download full text article at http://scholarworks.sfasu.edu/j_of_geospatial_applications_in_natural_resources/vol1/iss1/1/
 
 ## Dependencies
 Dependencies for this ArcGIS Python Toolbox include arcpy (comes with ArcGIS), pandas, numpy, matplotlib, and scipy python packages as well as SAGA (System for Automated Geoscientific Analysis) which can be downloaded here: https://sourceforge.net/projects/saga-gis/. 
