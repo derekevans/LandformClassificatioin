@@ -28,18 +28,15 @@
 ##To access SAGA command line tools, include path to saga_cmd in system environmental Path variable
 #######################################################################################################################################
 
-try:
-    import arcpy
-    from arcpy.sa import *
-    from arcpy import env
-    import pandas as pd
-    from os import path
-    import numpy
-    import matplotlib.pyplot as plt
-    from scipy.stats.stats import pearsonr,spearmanr
-    import subprocess as sp
-except ImportError, e:
-        arcpy.AddError("One or more of the necessary python packages are not installed!")
+import arcpy
+from arcpy.sa import *
+from arcpy import env
+import pandas as pd
+from os import path
+import numpy
+import matplotlib.pyplot as plt
+from scipy.stats.stats import pearsonr,spearmanr
+import subprocess as sp
 
 #this class is used to scale terrain indices/surface derivatives to the specified neighborhood radius in cells.
 class Scale(object):
