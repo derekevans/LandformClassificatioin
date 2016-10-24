@@ -804,7 +804,10 @@ class LandformClassificationPennock(object):
 
         #generate the profile curvature raster
         prof = scale.profile_curvature(dem,prof_nr,path.join(env.scratchGDB, "prof" + "_" + str(prof_nr)))
-
+        
+        #invert values so convex is positive and concave is negative
+        prof = prof * -1
+        
         #classify footslopes as profile curvature < -0.1
         foot = Con(prof < -0.1,10,0)
 
