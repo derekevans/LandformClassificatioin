@@ -131,16 +131,19 @@ class Scale(object):
         dem_ascii = arcpy.RasterToASCII_conversion(dem,dem_ascii_path)
 
         #convert ascii to sgrd with SAGA
-        dem_sgrd = sp.Popen(['saga_cmd','io_grid','Import ESRI Arc/Info Grid','-GRID='+dem_sgrd_path,'-FILE='+ dem_ascii_path],stdout=sp.PIPE, shell=True)
+        #io_grid 1 - Import ESRI Arc/Info Grid
+        dem_sgrd = sp.Popen(['saga_cmd','io_grid','1','-GRID='+dem_sgrd_path,'-FILE='+ dem_ascii_path],stdout=sp.PIPE, shell=True)
         dem_sgrd.wait()
 
         #derive the convergence index with SAGA
-        ci_sgrd = sp.Popen(['saga_cmd', 'ta_morphometry', 'Convergence Index (Search Radius)', '-ELEVATION='+dem_sgrd_path,'-CONVERGENCE='+ci_sgrd_path,
+        #ta_morphometry 2 - Convergence Index (Search Radius)
+        ci_sgrd = sp.Popen(['saga_cmd', 'ta_morphometry', '2', '-ELEVATION='+dem_sgrd_path,'-CONVERGENCE='+ci_sgrd_path,
                             '-RADIUS='+str(cell_radius)],stdout=sp.PIPE, shell=True)
         ci_sgrd.wait()
 
         #convert the convergence index sgrd to ascii with SAGA
-        ci_ascii = sp.Popen(['saga_cmd', 'io_grid', 'Export ESRI Arc/Info Grid', '-GRID='+ci_sgrd_path, '-FILE='+ci_ascii_path],
+        #io_grid 0 - Export ESRI Arc/Info Grid
+        ci_ascii = sp.Popen(['saga_cmd', 'io_grid', '0', '-GRID='+ci_sgrd_path, '-FILE='+ci_ascii_path],
                   stdout=sp.PIPE, shell=True)
         ci_ascii.wait()
 
